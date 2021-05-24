@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title> DWM | [Blogr]</title>
+</head>
+
+<body>
+    <section class="header-section container">
+        <nav>
+            <label for="logo">
+                <img src="img/logo.svg" alt="logo" name="logo">
+            </label>
+            <ul id="navbar">
+                <li>
+                    <label for="products">Product</label>
+                    <select name="products"></select>
+                </li>
+                <li>
+                    <label for="company">Company</label>
+                    <select name="company"></select>
+                </li>
+                <li>
+                    <label for="connect">Connect</label>
+                    <select name="connect"></select>
+                </li>
+                <div class="nav-btns-in-navbar">
+                    <button class="nav-btn">Login </button>
+                    <button class="nav-btn">Sign Up</button>
+                </div>
+            </ul>
+            <div class="nav-btns">
+                <button class="nav-btn">Login </button>
+                <button class="nav-btn">Sign Up</button>
+            </div>
+            <div id="burger" onclick="clicked()">
+                <img src="img/icon-hamburger.svg" alt="burger">
+            </div>
+        </nav>
+        <div class="content">
+            <h1>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+            <div class="content-btns">
+                <button class="header-btn">Start for Free</button>
+                <button class="header-btn">Learn More</button>
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="img/bg-pattern-intro.svg" alt="intro">
+        </div>
+    </section>
+    <section class="second-section">
+        <h1>Designed for the future</h1>
+        <div class="margin-from-left content">
+            <div class="left-side">
+                <div class="card" id="card-1">
+                    <h2>Introducing an extensible editor</h2>
+                    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility
+                        with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                </div>
+                <div class="card" id="card-2">
+                    <h2>Robust content management</h2>
+                    <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="img/illustration-editor-desktop.svg" alt="img">
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="margin-from-right content">
+            <div class="left-img">
+                <img src="img/illustration-phones.svg" alt="circle">
+                <div class="header-img-3rd-section">
+                    <img src="img/bg-pattern-circles.svg" alt="intro">
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>State of the Art Infrastructure</h1>
+                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <div class="margin-from-right content">
+            <div class="left-side-img">
+                <img src="img/illustration-laptop-desktop.svg" alt="laptop">
+            </div>
+            <div class="right-side-content">
+                <div class="card">
+                    <h1>Free, open, simple</h1>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly
+                        with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                </div>
+                <div class="card">
+                    <h1>Powerful tooling</h1>
+                    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="first-col"><img src="img/logo.svg" alt="logo"></div>
+        <div class="second-col">
+            <li class="topper"> Product</li>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+        </div>
+        <div class="third-col">
+            <li class="topper">Company</li>
+            <li>About</li>
+            <li> Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+        </div>
+        <div class="forth-col">
+            <li class="topper">Connect</li>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+        </div>
+    </footer>
+    <script>
+        let burger = document.getElementById('burger');
+        let navbar = document.getElementById('navbar');
+        let a = 0;
+
+        function clicked() {
+            if (a == 0) {
+                navbar.classList.add('show_it');
+                a = 1;
+                console.log(a);
+            } else {
+                navbar.classList.remove('show_it')
+                a = 0;
+                console.log(a);
+            }
+        }
+    </script>
+</body>
+
+</html>
